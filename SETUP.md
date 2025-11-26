@@ -45,12 +45,12 @@ npm install
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://adarshk:Adarsh%403011@cluster0.shxfo.mongodb.net/chargedup
+MONGODB_URI=your_mongo_db_uri
 JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
 NODE_ENV=development
 ```
 
-**Important:** Change `JWT_SECRET` to a random secure string in production!
+
 
 4. Start the backend server:
 
@@ -96,11 +96,6 @@ The React app will automatically open in your browser at `http://localhost:3000`
 
 ## Troubleshooting
 
-### MongoDB Connection Error
-
-- Make sure MongoDB is running: `mongod` or check service status
-- Verify connection string in `.env` file
-- Try: `mongodb+srv://adarshk:Adarsh%403011@cluster0.shxfo.mongodb.net/chargedup` instead
 
 ### Port Already in Use
 
