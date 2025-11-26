@@ -1,0 +1,149 @@
+.diet-plan-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  padding-bottom: 40px;
+}
+
+.diet-plan-header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.diet-plan-header h1 {
+  font-size: 36px;
+  color: white;
+}
+
+.calorie-info-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.calorie-info-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.calorie-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.calorie-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calorie-label {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.calorie-value {
+  color: #667eea;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.meal-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.meal-card:hover {
+  border-color: #667eea;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #2a2a2a;
+}
+
+.meal-header h2 {
+  font-size: 20px;
+  color: #667eea;
+  text-transform: capitalize;
+}
+
+.meal-calories {
+  background: #667eea;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.meal-content h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.meal-macros {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.total-calories {
+  background: #1a1a1a;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+
+.total-calories h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.total-value {
+  font-size: 36px;
+  color: #667eea;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .diet-plan-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .diet-plan-header h1 {
+    font-size: 28px;
+  }
+  
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
